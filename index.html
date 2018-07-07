@@ -6,10 +6,14 @@
   <title>CityClippers - Project1</title>
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
+
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -34,11 +38,10 @@
           <h5 class="header col s12 light">Let's go out tonight and save money too!</h5>
         </div> -->
         <div class="row center">
-          <input placeholder="Zip Code" id="zip_code" type="text" maxlength="5" class="validate" width="10px">
-          <a href="http://materializecss.com/getting-started.html" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">Submit</a>
-        
+            <input placeholder="Zip Code" id="zip_code" type="text" maxlength="5" class="validate" width="10px">
+             <a href="http://materializecss.com/getting-started.html" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">Submit</a>
+                    
         </div>
-        
         <br><br>
 
       </div>
@@ -53,7 +56,11 @@
           <div class="col s12 center">
             <h3><i class="mdi-content-send brown-text"></i></h3>
             <h4>Savor the Savings!</h4>
-            <p class="left-align light">Here is maps and resturant results
+            <p class="left-align light">
+                <!-- Map Canvas Integration -->
+                    <div id="map-canvas"></div>
+                </div>
+                <!-- Map Canvas End -->
             </p>
           </div>
         </div>
@@ -80,7 +87,41 @@
             <div class="col s12 center">
               <h3><i class="mdi-content-send brown-text"></i></h3>
               <h4>Email Alerts</h4>
-              <p class="left-align light">button that will gather email name and zip code and will be connected ot firebase
+              <p class="left-align light">
+                  <!-- Area where it will gather email name and zip code and will be connected ot firebase -->
+                  <div class="contact" id="contact">
+                        <div class="container">
+                          <div class="col-md-offset-1 col-md-10">
+                            <h2>Subscribe to Coupons<i class="fa fa-paper-plane-o"></i></h2>
+                            <div id="map-canvas"></div>
+                          </div>
+                          <form method="post" action="contact.php" name="contactform" id="contactform">
+                            <div class="col-md-offset-1 col-md-5">
+                              <fieldset>
+                                <input name="name" type="text" id="name" size="30" placeholder="Name">
+                                <br>
+                                <input name="email" type="text" id="email" size="30" placeholder="Email">
+                                <br>
+                                <input name="Zip Code" type="text" id="zip" size="30" placeholder="Zip Code">
+                                <br>
+                                <input name="human" type="text" id="human" size="30" placeholder="Prove your not a robot... What is 2+2?">
+                                <br>
+                              </fieldset>
+                            </div>
+                            <div class="col-md-5">
+                              <fieldset>
+                                <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-md-offset-1 col-md-10">
+                              <fieldset>
+                                <button type="submit" class="btn btn-lg" id="submit" value="Submit">Submit</button>
+                              </fieldset>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
               </p>
             </div>
           </div>
@@ -170,6 +211,11 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
+  <!-- Google Maps API Contact Page-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script  src="j/maps.js"></script>
+
 
   </body>
 </html>
