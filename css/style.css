@@ -55,3 +55,11 @@ p {
 footer.page-footer {
   margin: 0;
 }
+#zip_code {
+  background: #26a69a;
+  text-align: center;
+  border-style: inset;
+  border-width: 4;
+  width: 100px;
+  height: 55px;
+}
