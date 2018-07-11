@@ -62,7 +62,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   function onReady(fn) {
     if (doc.readyState !== "loading") {
       fn();
-      
+      $('.modal').modal();
     } else {
       doc.addEventListener("DOMContentLoaded", fn);
     }
