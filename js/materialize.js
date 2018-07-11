@@ -57,10 +57,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     return frag.body.childNodes;
   }
+  
 
   function onReady(fn) {
     if (doc.readyState !== "loading") {
       fn();
+      
     } else {
       doc.addEventListener("DOMContentLoaded", fn);
     }
@@ -12335,3 +12337,4 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   Range.init($('input[type=range]'));
 })(cash, M.anime);
+
