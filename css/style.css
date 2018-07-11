@@ -15,10 +15,6 @@ p {
   line-height: 2rem;
 }
 
-.sidenav-trigger {
-  color: #26a69a;
-}
-
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -28,22 +24,6 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
 
 .icon-block {
   padding: 0 15px;
@@ -59,8 +39,10 @@ footer.page-footer {
 #zip_code {
   background: #2130b4;
   text-align: center;
-  border-style: inset;
-  border-width: 4;
+  /* border-style: inset;
+  border-width: 4; */
+  padding-top: 0.1%;
+  padding-bottom: 0.3%;
   width: 100px;
   height: 50px;
 }
@@ -70,5 +52,28 @@ footer.page-footer {
   max-height: 55px;
 }
 .nav-wrapper {
-  background: black;
+  background: rgb(128, 126, 126);
+}
+
+.page-footer {
+  background: rgb(128, 126, 126);
+}
+
+#contactform {
+  border: #2130b4;
+}
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
