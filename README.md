@@ -13,7 +13,6 @@ The app can be found by clicking [here!](https://victoriagoesplaces.github.io/Pr
 * [Discount API](https://discountapi.com/) - The API used for finding deals
 * [Google Maps API](https://cloud.google.com/maps-platform/) - The API for mapping each deal's location
 * [Materialize](http://materializecss.com/) - The css Framework
-* [Bootstrap](https://getbootstrap.com/docs/3.3/) - The other css Framework
 
 ### Authors
 * Victoria Gonzalez - [VictoriaGoesPlaces](https://github.com/victoriagoesplaces)

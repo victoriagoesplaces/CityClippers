@@ -21,7 +21,8 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+
+.parallax-container .section {
     width: 100%;
   }
 
@@ -36,13 +37,16 @@ footer.page-footer {
   margin: 0;
 }
 
-#zip_code {
+/* #zip_code {
+align-content: center !important;
+} */
+
+#submit-button {
   background: #2130b4;
-  text-align: center;
-  padding-top: 0.1%;
-  padding-bottom: 0.3%;
-  width: 100px;
-  height: 50px;
+}
+
+#submit2 {
+  background: #2130b4;
 }
 
 .logo {
@@ -57,18 +61,84 @@ footer.page-footer {
   background: rgb(128, 126, 126);
 }
 
-#contactform {
-  border: #2130b4;
+#aboutUs {
+  color: blue !important;
 }
 
-#display-deal{
-  max-width: 400px;
+#form {
+  background-color:rgba(132, 132, 190, 0.116);
+
 }
 
 #map {
   width: 413px; 
   height: 300px;
 }
+
+#display-deal{
+  max-width: 100%;
+}
+
+.card-image {
+  height: 100% ;
+  width: 200px ;
+}
+
+
+/* Css for contact information (email) */
+
+.input-field>label {
+  color: white;
+}
+
+input[type=email]:not(.browser-default) {
+  border-bottom: 1px solid white;
+}
+
+input[type=email]:focus + label {
+  color:  rgb(42, 59, 214) !important;
+}
+
+input[type=email]:focus {
+  color: v !important;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid  rgb(42, 59, 214);
+  box-shadow: 0 1px 0 0  rgb(42, 59, 214);
+}
+
+/* Css for contact information (email) */
+.input-field>label {
+  color: blue;
+}
+
+input[type=text]:not(.browser-default) {
+  border-bottom: 1px solid white;
+}
+
+input[type=text]:focus + label {
+  color: rgb(42, 59, 214) !important;
+}
+
+input[type=text]:focus {
+  color: rgb(42, 59, 214) !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid  rgb(42, 59, 214);
+  box-shadow: 0 1px 0 0  rgb(42, 59, 214);
+}
+
+.material-icons {
+  color: rgb(231, 231, 240);
+}
+
+.input-field .prefix.active{
+color: blue;
+}
+
+/* Responsiveness */
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {

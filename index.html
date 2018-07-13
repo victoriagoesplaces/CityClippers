@@ -8,8 +8,6 @@
     <!-- CSS  -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
-      <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
       <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       
     <!-- Google Maps API Link -->
@@ -31,22 +29,18 @@
         <div class="container">
           <br><br>
           <h1 class="header center white-text text-lighten-2">Are You Hungry for a Deal?</h1>
-          <div class="row center">
-
-              <!-- <div class="input-field col md3 center" id="zip_code">
+          <div class="row">
+              <div class="col s3"></div>
+              <div class="input-field col sm6 " id="zip_code">
                   <i class="material-icons prefix">add_location</i>
                   <input id="icon_prefix" type="text" class="validate" maxlength="5">
                   <label for="icon_prefix">Zip Code</label>
-              </div> -->
-
-              <!-- <form>
-                  zip: \<input type=“text” name=“zip” value=“46032”> <a href=“#” onclick='getLocation()'>Get Address</a>
-              </form> -->
-            
-
-              <input placeholder="ZIP CODE" id="zip_code" type="text" maxlength="5" class="validate" width="10px">
-              <a href="http://materializecss.com/getting-started.html" id="submit-button" class="btn-large waves-effect waves-light teal lighten-1">Submit</a>
-                      
+                  <button class="btn waves-effect right" id="submit-button" type="submit" name="action">Submit
+                      <i class="material-icons right">send</i>
+                  </button>  
+                 
+              </div> 
+                <div class="col s2"></div>          
           </div>
           <br><br>
 
@@ -57,7 +51,6 @@
 
     <div class="container">
         <div class="section">
-    
           <div class="row">
             <div class="col md 6">
               <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -69,12 +62,16 @@
 
 
 
+
+
+
+
+
                   <!-- Map Canvas End -->
               </p>
-
-              <div class="col md 12">
-              <div id="display-deal"></div>
-            </div>
+              <div class="col md 12 card">
+                <div id="display-deal"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -91,53 +88,54 @@
         <div class="parallax"><img src="assets/images/background1.jpg" alt="Unsplashed background img 3"></div>
       </div>
 
-      <div class="container">
-          <div class="section">
-      
-            <div class="row">
-              <div class="col s12 center">
-                <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4>Email Alerts</h4>
-                <p class="left-align light">
-                    <!-- Area where it will gather email name and zip code and will be connected to firebase -->
-                    <div class="contact" id="contact">
-                          <div class="container">
-                            <div class="col-md-offset-1 col-md-10">
-                              <h2>Subscribe to Coupons</h2>
-                            </div>
-                            <form method="post" name="contactform" id="contactform">
-                              <div class="col-md-offset-1 col-md-5">
-                                <fieldset>
-                                  <input name="name" type="text" id="name" size="30" placeholder="Name">
-                                  <br>
-                                  <input name="email" type="text" id="email" size="30" placeholder="Email">
-                                  <br>
-                                  <input name="Zip Code" type="text" id="zip" size="30" placeholder="Zip Code">
-                                  <br>
-                                  <input name="human" type="text" id="human" size="30" placeholder="Prove you're not a robot... What is 2+2?">
-                                  <br>
-                                </fieldset>
-                              </div>
-                              <div class="col-md-5">
-                                <fieldset>
-                                  <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
-                                </fieldset>
-                              </div>
-                              <div class="col-md-offset-1 col-md-10">
-                                <fieldset>
-                                  <button type="submit" class="btn btn-lg" id="submit2" value="Submit">Submit</button>
-                                </fieldset>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                </p>
+  <div class="container">
+      <div class="section">
+          <div class="row" id="form">
+      <form class="col s12 center">
+              <h5>Email Alerts</h5>
+  <!-- Area where it will gather email name and zip code and will be connected to firebase -->
+        <div class="row">
+              <div class="col s2"></div>
+              <div class="input-field col s4">
+                <input placeholder="Name" id="name" type="text" class="validate">
+                <label for="name">Name</label>
               </div>
-            </div>
-            </div>
-          </div>
+              <div class="input-field col s3">
+                <input placeholder="Comments" id="comments" type="text">
+                <label for="comments">Comments<i class="material-icons prefix">mode_edit</i></label>
+              </div>
+              <div class="col s2"></div>
         </div>
 
+        <div class="row">
+              <div class="col s2"></div>
+              <div class="input-field col s4">
+                <input id="email" type="email" placeholder= "example@email.com" class="validate">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s4">
+                  <input placeholder="What is 2+2?" id="human" type="text">
+                  <label for="human">I'm not a robot</label>
+              </div<div class="col s2"></div>
+        </div>
+
+        <div class="row">
+              <div class="col s2"></div>
+              <div class="input-field col s4">
+                  <input placeholder="Zip Code" id="zip" type="text" class="validate">
+                  <label for="Postal Code">Zip Code</label>
+              </div>
+              <div class="col s4">
+                  <button class="btn waves-effect center" id="submit2" type="submit" name="action">Submit
+                      <i class="material-icons right">send</i>
+                  </button>
+              </div>
+              <div class="col s2"></div>
+          </div>     
+        </form>
+      </div>    
+    </div>
+  </div>
 
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
@@ -149,32 +147,26 @@
       <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
-
     <div class="container">
         <div class="section">
-  
           <div class="row">
             <div class="col s12 center">
               <h3><i class="mdi-content-send brown-text"></i></h3>
-              <!-- <h4>Video/ Modal</h4> -->
               <!-- Modal Trigger -->
                   <a class="waves-effect waves-light modal-trigger" data-target="modal1"><img src = "assets/images/videoCapture.png"></a>
                   
-                  <!-- Modal Structure -->
+              <!-- Modal Structure -->
                   <div id="modal1" class="modal">
                     <div class="modal-header right">
                       <a href="#!" class="modal-close waves-effect waves-green btn-flat">X</a></div>
                     <div class="modal-content">
                       <iframe width="660" height="390" src="https://www.youtube.com/embed/y6NI58V8lWM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    
+                    </div>  
                   </div>
-                </div>         
-                  
-                </div>
-            
-              </div>
-            </div>
+            </div>          
+          </div>
+        </div>
+    </div>
 
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
@@ -190,7 +182,7 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">About us</h5>
+            <h5 class="white-text" id=aboutUs>About us</h5>
             <p class="grey-text text-lighten-4">
                 Apple pie lemon drops chocolate cake tootsie roll fruitcake 
                 Apple pie lemon drops chocolate cake tootsie roll fruitcake 
@@ -199,8 +191,8 @@
             </p>
           </div>
             <div class="col l3 s10"></div>
-            <div class="col l3 s12" id=aboutUs>
-              <h5 class="white-text">Connect with us</h5>
+            <div class="col l3 s12">
+              <h5 class="white-text" id=aboutUs>Connect with us</h5>
               <ul>
                 <li><a class="white-text" target="_blank" href="https://github.com/victoriagoesplaces"><i class="fab fa-github"></i> Victoria Gonzalez</a></li>
                 <li><a class="white-text" target="_blank" href="https://github.com/thomson3914"><i class="fab fa-github"></i> Tyler Thomson</a></li>
@@ -228,10 +220,8 @@
 
     <!-- Discounts API -->
     <script  src="js/deals.js"></script>
-
     <!-- Icon for contact me -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-
     <!-- Firebase js -->
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script type="text/javascript" src="js/firebaseapp.js"></script>
