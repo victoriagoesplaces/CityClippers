@@ -14,14 +14,18 @@ function showDeals(){
 
         for (var i = 0; i < results.length; i++){ 
             if (results[i].deal.category_name === "Restaurants") {
-                console.log(results[i])
-        
-            var deals = $("<img class='dealOptions' src='" +  results[i].deal.image_url + "'>");
-            var link = $("<a target='_blank' href=' " + results[i].deal.url + "'>" + results[i].deal.title + "</a>");
+                // console.log(results[i])
+
+    // var deals = $("<img class='card-image' src='" + results[i].deal.image_url + "'>");
+        // var deals = $("<div>" + "<img class='card-image' src='" + results[i].deal.image_url + 
+        // "'>" + "<a target='_blank' href=' " + results[i].deal.url + "'>" + results[i].deal.title + "</a>" + "</div>");
+
+            var deals = $("<img class='card-image' src='" +  results[i].deal.image_url + "'>");
+            var link = $("<li>"+ "<a target='_blank' href=' " + results[i].deal.url + "'>" + results[i].deal.title + "</a>" + "</li>");
             // var dealsOne = $("<div class='card-image'>" + deals + "</div>")
             // var dealsTwo = $("<div class='card-action'>" + link + "</div>")
 
-            $("#display-deal").prepend(deals);
+            // $("#display-deal").prepend(deals);
             $("#display-deal").prepend(link);
         
             }
