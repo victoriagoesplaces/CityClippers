@@ -10,7 +10,7 @@ The app can be found by clicking [here!](https://victoriagoesplaces.github.io/Pr
 
 ### Built With
 * [Firebase](https://firebase.google.com/) - Used as the project database
-* [Discout API](https://discountapi.com/) - The API used for finding deals
+* [Discount API](https://discountapi.com/) - The API used for finding deals
 * [Google Maps API](https://cloud.google.com/maps-platform/) - The API for mapping each deal's location
 * [Materialize](http://materializecss.com/) - The css Framework
 * [Bootstrap](https://getbootstrap.com/docs/3.3/) - The other css Framework
@@ -19,7 +19,7 @@ The app can be found by clicking [here!](https://victoriagoesplaces.github.io/Pr
 * Victoria Gonzalez - [VictoriaGoesPlaces](https://github.com/victoriagoesplaces)
 * Tyler Thomson - [thomson3914](https://github.com/thomson3914)
 * Rubens Cardoso - [rCardoso89](https://github.com/rcardoso89)
-* Adrian R - [robertssoaa](https://github.com/robertssoaa)
+* Adrian Roberts- [robertssoaa](https://github.com/robertssoaa)
 
 ### Screenshots
 
