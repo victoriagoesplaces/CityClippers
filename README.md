@@ -19,7 +19,7 @@ The app can be found by clicking [here!](https://victoriagoesplaces.github.io/Pr
 * Victoria Gonzalez - [VictoriaGoesPlaces](https://github.com/victoriagoesplaces)
 * Tyler Thomson - [thomson3914](https://github.com/thomson3914)
 * Rubens Cardoso - [rCardoso89](https://github.com/rcardoso89)
-* Adrian Roberts- [robertssoaa](https://github.com/robertssoaa)
+* Adrian Robertson- [robertssoaa](https://github.com/robertssoaa)
 
 ### Screenshots
 
