@@ -1,4 +1,4 @@
-var userZip = 34734;
+var userZip = 32835;
 
 function showDeals(){
 
@@ -18,10 +18,11 @@ function showDeals(){
         
             var deals = $("<img class='dealOptions' src='" +  results[i].deal.image_url + "'>");
             var link = $("<a target='_blank' href=' " + results[i].deal.url + "'>" + results[i].deal.title + "</a>");
-            // var dealsOne = $("<div class='card'>" + deals + link + "</div>")
+            // var dealsOne = $("<div class='card-image'>" + deals + "</div>")
+            // var dealsTwo = $("<div class='card-action'>" + link + "</div>")
 
-            // $("#display-deal").prepend(deals);
-            // $("#display-deal").prepend(link);
+            $("#display-deal").prepend(deals);
+            $("#display-deal").prepend(link);
         
             }
         };
