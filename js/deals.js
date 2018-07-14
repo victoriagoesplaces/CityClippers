@@ -1,5 +1,7 @@
 var userZip = 32835;
-document.getElementById("submit-button").addEventListener("click", showDeals);
+var title = $("<h4> Deals near you </h4>");
+
+ document.getElementById("submit-button").addEventListener("click", showDeals);
 
  function showDeals(){
 
@@ -17,24 +19,16 @@ document.getElementById("submit-button").addEventListener("click", showDeals);
             if (results[i].deal.category_name === "Restaurants") {
                 // console.log(results[i])
 
-    // var deals = $("<img class='card-image' src='" + results[i].deal.image_url + "'>");
-        // var deals = $("<div>" + "<img class='card-image' src='" + results[i].deal.image_url + 
-        // "'>" + "<a target='_blank' href=' " + results[i].deal.url + "'>" + results[i].deal.title + "</a>" + "</div>");
-
             var deals = $("<img class='card-image' src='" +  results[i].deal.image_url + "'>");
             var link = $("<li>"+ "<a target='_blank' href=' " + results[i].deal.url + "'>" + results[i].deal.title + "</a>" + "</li>");
-            // var dealsOne = $("<div class='card-image'>" + deals + "</div>")
-            // var dealsTwo = $("<div class='card-action'>" + link + "</div>")
-
+           
             // $("#display-deal").prepend(deals);
-            $("#display-deal").prepend(link);
+            $("#display-deal").prepend(title);
+            $("#display-deal").append(link);
    
             }
         };
     });
  }
 //  showDeals();
- 
-// $(document).on("click", "submit-button" ); 
-// $(on("click", ".submit-button", showDeals  );
 
