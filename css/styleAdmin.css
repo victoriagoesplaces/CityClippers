@@ -1,11 +1,13 @@
 body{
     background-image: url('../assets/images/background.jpg') !important;
     background-size: 100%;
+    font-family: 'Rajdhani', sans-serif;
     
 }
 .jumbotron{
     margin-top: 3%;
     background: rgba(128, 126, 126, 0.774);
+    font-family: 'Rajdhani', sans-serif;
 }
 
 img {

@@ -13,6 +13,7 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .parallax-container {
@@ -46,10 +47,12 @@ align-content: center !important;
 
 #submit-button {
   background: #2130b4;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 #submit2 {
   background: #2130b4;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .logo {
@@ -66,15 +69,18 @@ align-content: center !important;
 
 #aboutUs {
   color: blue !important;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 #form {
   background-color:rgba(132, 132, 190, 0.116);
+  font-family: 'Rajdhani', sans-serif;
 }
 
 #map {
   width: 413px; 
   height: 300px;
+  margin-right: 0%;
 }
 
 #display-deal{
@@ -84,10 +90,30 @@ align-content: center !important;
 .card-image {
   height: 100% ;
   width: 200px ;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h4{
+  color: blue;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+li {
+  font-family: 'Rajdhani', sans-serif;
 }
 
 
 /* Css for contact information (email) */
+
+label{
+  font-size: 22px !important;
+}
 
 .input-field>label {
   color: white;
@@ -102,7 +128,7 @@ input[type=email]:focus + label {
 }
 
 input[type=email]:focus {
-  color: v !important;
+  color: blue !important;
 }
 
 input[type=email]:not(.browser-default):focus:not([readonly]) {
