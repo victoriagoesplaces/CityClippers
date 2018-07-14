@@ -1,9 +1,9 @@
-var userZip = 32835;
+var zip;
 document.getElementById("submit-button").addEventListener("click", showDeals);
 
  function showDeals(){
-
-    var queryURL = "https://api.discountapi.com/v2/deals?api_key=BOXCrbvk&category_slugs=restaurants&location=" + userZip;
+    var zip = document.forms[0].zip.value;
+    var queryURL = "https://api.discountapi.com/v2/deals?api_key=BOXCrbvk&category_slugs=restaurants&location=" + zip;
     $.ajax({
         url: queryURL,
         method: "GET"

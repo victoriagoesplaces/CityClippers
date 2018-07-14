@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Google Maps</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <body>
+        <form>
+            zip:
+            <input type="text" name="zip" value="">
+            <a href="#" onclick="getAddressInfoByZip()">Get Address</a>
+        </form>
+
+        <div id="map" style="height:500px" "width:100px">Loading your Location...</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-gC8ZZTnj7f7RjmWyPEYVR1QJNiA38r8&libraries=places&callback=initMap"></script> -->
+        <script type="text/javascript">
+            var infoWindow;
+
+            function initMap() {
+            // Pulling LAt and Lng from zipcode entered by user input.
+            var zipLat;
+            var zipLng;
+            
+
+            }
+            // function getLocation() {
+                // getAddressInfoByZip(document.forms[0].zip.value);
+            // }
+
+            function response(obj) {
+                console.log(obj);
+            }
+            function getAddressInfoByZip() {
+                var zip = document.forms[0].zip.value;
+                if (zip.length >= 5 && typeof google != 'undefined') {
+                    var addr = {};
+                    var geocoder = new google.maps.Geocoder();
+                    geocoder.geocode({ 'address': zip }, function (zipResults, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            if (zipResults.length >= 1) {
+                                var coords = zipResults[0].geometry.location;
+                                zipLat = coords.lat();
+                                zipLng = coords.lng();
+                                parseFloat(zipLat);
+                                parseFloat(zipLng);
+                                // console.log(zipResults);
+                                console.log(zipLat + " / " + zipLng)
+                                
+                                var pos = { lat: parseFloat(zipLat), lng: parseFloat(zipLng) };
+                                var mapCanvas = document.getElementById('map');
+                                var mapOptions = {
+                                    mapTypeId: google.maps.MapTypeId.SATELLITE,
+                                    zoom: 10,
+                                    center: pos,
+                                }
+                                map = new google.maps.Map(mapCanvas, mapOptions);
+                                infoWindow = new google.maps.InfoWindow;
+                                
+                                var request = {
+                                location: pos,
+                                type: 'restaurant',
+                                radius: "600",
+                                fields: ['photos', 'formatted_address', 'name', 'rating', 'geometry'],
+                                }; 
+                                console.log(request);
+
+                                service = new google.maps.places.PlacesService(map);
+                                service.textSearch(request, callback);
+                                infoWindow.setPosition(pos);
+                                map.setCenter(pos);
+
+                                function () {
+            handleLocationError(true, infoWindow, map.getCenter());
+        });
+    } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false, infoWindow, map.getCenter());
+    }
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+            'Error: The Geolocation service failed.' :
+            'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+    }
+
+
+
+                        // Calling the information/results
+            function callback() {
+                var place = []
+                
+                    for (var i = 0; i < results.length; i++) {
+                        place.push(results[i]);
+                        var coords = results[i].geometry.location;
+                        var latLng = new google.maps.LatLng(coords.lat(), coords.lng());
+                        // console.log(coords.lat());
+                        // console.log(coords.lng());
+                        var marker = new google.maps.Marker({
+                            position: latLng,
+                            map: map
+                        });
+
+                    }
+                
+                console.log(place);
+
+            }
+            callback()
+                            }
+                        }
+
+                    });
+                } else {
+                    response({ success: false });
+                }
+            }
+            // var pos = {
+            //                 lat: zipLat,
+            //                 lng: zipLng,
+            //             };
+
+
+            
+               
+
+                function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent(browserHasGeolocation ?
+                        'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+                    infoWindow.open(map);
+                };
+
+ 
+            
+            $(document).ready(function () {
+                var map;
+                var service;
+                var infowindow;
+
+
+            });
+        </script>
+        <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkQoEZI5-Tsx7FBToSasiXkNvVy7fYbo4&libraries=places&callback=initMap"></script> -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-gC8ZZTnj7f7RjmWyPEYVR1QJNiA38r8&libraries=places&callback=initMap"></script>
+    </body>
+
+</html>
