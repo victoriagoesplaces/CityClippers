@@ -1,6 +1,7 @@
 var userZip = 32835;
+document.getElementById("submit-button").addEventListener("click", showDeals);
 
-function showDeals(){
+ function showDeals(){
 
     var queryURL = "https://api.discountapi.com/v2/deals?api_key=BOXCrbvk&category_slugs=restaurants&location=" + userZip;
     $.ajax({
@@ -27,9 +28,13 @@ function showDeals(){
 
             // $("#display-deal").prepend(deals);
             $("#display-deal").prepend(link);
-        
+   
             }
         };
-    }) 
-}
-showDeals();
+    });
+ }
+//  showDeals();
+ 
+// $(document).on("click", "submit-button" ); 
+// $(on("click", ".submit-button", showDeals  );
+

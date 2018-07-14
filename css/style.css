@@ -40,6 +40,9 @@ footer.page-footer {
 /* #zip_code {
 align-content: center !important;
 } */
+.modal .modal-content{
+  background-color: rgba(132, 132, 190, 0.116) !important;
+}
 
 #submit-button {
   background: #2130b4;
@@ -67,7 +70,6 @@ align-content: center !important;
 
 #form {
   background-color:rgba(132, 132, 190, 0.116);
-
 }
 
 #map {
