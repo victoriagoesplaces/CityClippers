@@ -1,11 +1,11 @@
 body{
-    background-image: url('../assets/images/background.jpg') !important;
-    background-size: 100%;
-    
+    /* background-image: url('../assets/images/background.jpg') !important;
+    background-size: 100%; */
+    background-color:  rgba(5, 102, 141, 0.781);
 }
 .jumbotron{
     margin-top: 3%;
-    background: rgba(128, 126, 126, 0.774);
+    background:  #05668D;
 }
 
 img {
@@ -23,7 +23,7 @@ img {
 }
 
 .panel-success>.panel-heading{
-    background: rgba(128, 126, 126, 0.493);
+    background: #05668D;
     color:white;
 }
 
@@ -32,5 +32,5 @@ img {
 }
 
 b, strong {
-    color: blue;
+    color: #F0F3BD;
 }

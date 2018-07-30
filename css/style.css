@@ -15,6 +15,15 @@ p {
   line-height: 2rem;
 }
 
+.btn, h5{
+  color: #F0F3BD
+}
+
+h4 {
+  color: #028090;
+  text-align: center;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -45,31 +54,32 @@ align-content: center !important;
 }
 
 #submit-button {
-  background: #2130b4;
+  background:#028090
 }
 
-#submit2 {
-  background: #2130b4;
+#submit2{
+  background:#028090
 }
 
 .logo {
   height: 100%;
   max-height: 55px;
+  margin-top: 5px;
 }
 .nav-wrapper {
-  background: rgb(128, 126, 126);
+  background:#05668D;
 }
 
 .page-footer {
-  background: rgb(128, 126, 126);
+  background:#05668D;
 }
 
 #aboutUs {
-  color: blue !important;
+  color: #F0F3BD!important;
 }
 
 #form {
-  background-color:rgba(132, 132, 190, 0.116);
+  background-color:rgba(5, 102, 141, 0.781);
 }
 
 #map {
@@ -98,7 +108,7 @@ input[type=email]:not(.browser-default) {
 }
 
 input[type=email]:focus + label {
-  color:  rgb(42, 59, 214) !important;
+  color:  #02C39A !important;
 }
 
 input[type=email]:focus {
@@ -106,13 +116,13 @@ input[type=email]:focus {
 }
 
 input[type=email]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid  rgb(42, 59, 214);
-  box-shadow: 0 1px 0 0  rgb(42, 59, 214);
+  border-bottom: 1px solid  #02C39A;
+  box-shadow: 0 1px 0 0  #02C39A;
 }
 
 /* Css for contact information (email) */
 .input-field>label {
-  color: blue;
+  color:  #F0F3BD;
 }
 
 input[type=text]:not(.browser-default) {
@@ -120,24 +130,24 @@ input[type=text]:not(.browser-default) {
 }
 
 input[type=text]:focus + label {
-  color: rgb(42, 59, 214) !important;
+  color: #02C39A !important;
 }
 
 input[type=text]:focus {
-  color: rgb(42, 59, 214) !important;
+  color: #02C39A !important;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid  rgb(42, 59, 214);
-  box-shadow: 0 1px 0 0  rgb(42, 59, 214);
+  border-bottom: 1px solid  #02C39A;
+  box-shadow: 0 1px 0 0  #02C39A;
 }
 
 .material-icons {
-  color: rgb(231, 231, 240);
+  color: #F0F3BD;
 }
 
 .input-field .prefix.active{
-color: blue;
+color: #028090;
 }
 
 /* Responsiveness */
