@@ -24,10 +24,13 @@ The app can be found by clicking [here!](https://victoriagoesplaces.github.io/Pr
 ### Screenshots
 
 Home Page view #1
-![screenshot](photo link "Home Page view 1")
+![screenshot](assets/images/cityclippers.png "Home Page view 1")
 
 Home Page view #2
-![screenshot](photo link "Home Page view 2")
+![screenshot](assets/images/mapCoupons.png "Home Page view 2")
 
 Home Page view #3
-![screenshot](photo link "Home Page view 3")
+![screenshot](assets/images/form.png "Home Page view 3")
+
+Home Page view #4
+![screenshot](assets/images/aboutUs.png "Home Page view 4")

@@ -24,6 +24,10 @@ h4 {
   text-align: center
 }
 
+h3{
+  margin: 0;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -84,7 +88,7 @@ align-content: center !important;
 
 #map {
   width: 413px; 
-  height: 300px;
+  height: 485px;
 }
 
 #display-deal{
