@@ -6,7 +6,7 @@
 * Allows users to subscribe to emailed coupons.
 
 ### Getting Started
-The app can be found by clicking [here!](https://victoriagoesplaces.github.io/ProjectOne/?zip=34734&action=#!)
+The app can be found by clicking [here!](https://victoriagoesplaces.github.io/CityClippers/?zip=34734&action=#!)
 
 ### Built With
 * [Firebase](https://firebase.google.com/) - Used as the project database
